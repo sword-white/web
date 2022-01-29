@@ -16,10 +16,12 @@
     <link rel="stylesheet" href="./css/style.css">
     <script language="javascript">
         function update() {
-            var str = window.location.href;
-            let list = str.split('?');//用刚刚传递地址里面的“？”把传过来的东西劈开
-            console.log(list);
-            var n = list[1];
+            // var str = window.location.href;
+            // let list = str.split('?');//用刚刚传递地址里面的“？”把传过来的东西劈开
+            // console.log(list);
+            // var n = list[1];
+            var n = Math.floor(Math.random() * 5 + 1);    // 可均衡获取 0 到 9 的随机整数。
+            var bgStr = "images/Slide" + n + ".jpeg";
             var bgStr = "images/Slide" + n + ".jpeg";
             document.getElementById("container").style.background = "url(" + bgStr + ")" + "no-repeat";//改变背景图片
             document.getElementById("save").src = bgStr;
