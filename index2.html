@@ -17,22 +17,21 @@
     <script type="text/javascript"></script>
     <script>
         function myskip() {
-            document.getElementById("container").style.backgroundImage = "url(../web/images/bk.gif)";
             //预加载
-            var n = Math.floor(Math.random() * 27 + 1);    // 可均衡获取 0 到 9 的随机整数。
+            var n = Math.floor(Math.random() * 6 + 1);    // 可均衡获取 0 到 9 的随机整数。
             var bgStr = "images/Slide (" + n + ").jpeg"
-            const slideimgs = [];
+            // const slideimgs = [];
             slideimgs.push(bgStr);
-            $.preload(slideimgs, {
-                order: 'ordered',
-                each: function (count) {
-                    console.log('正在加载第' + (count + 1) + '张图片');
-                },
-                all: function () {
-                    console.log('全部加载完成');
-                    window.location.href = "lots1.html?" + n;
-                }
-            });
+            // $.preload(slideimgs, {
+            //     order: 'ordered',
+            //     each: function (count) {
+            //         console.log('正在加载第' + (count + 1) + '张图片');
+            //     },
+            //     all: function () {
+            //         console.log('全部加载完成');
+            //         window.location.href = "lots1.html?" + n;
+            //     }
+            // });
         }
     </script>
 
