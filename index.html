@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="form-detection" content="telephone=no">
+    <meta name="form-detection" content="email=no">
+    <meta name="form-detection" content="address=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>loading</title>
+    <link rel="stylesheet" href="css/indexStyle.css">
+    <script src="https://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/preload.js"></script>
+
+</head>
+<body>
+<div id="demo"></div>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<script>
+    //预加载
+    const imgs = [
+        "images/bk.jpg",
+        "images/bk.gif",
+    ];
+    /**
+     * 使用插件，并有序加载
+     */
+    $.preload(imgs, {
+        order: 'ordered',
+        each: function (count) {
+            console.log('正在加载第' + (count + 1) + '张图片');
+        },
+        all: function () {
+            console.log('全部加载完成');
+            window.location.href = "index2.html";
+        }
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="form-detection" content="telephone=no">
+    <meta name="form-detection" content="email=no">
+    <meta name="form-detection" content="address=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>“抽签”</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="prefetch" href="../web/images/bk.gif">
+    <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://code.changer.hk/jquery/plugins/jquery.cookie.js"></script>
+    <script src="js/preload.js"></script>
+    <script type="text/javascript"></script>
+    <script>
+        function myskip() {
+            document.getElementById("container").style.backgroundImage = "url(../web/images/bk.gif)";
+            //预加载
+            var n = Math.floor(Math.random() * 25 + 1);    // 可均衡获取 0 到 9 的随机整数。
+            var bgStr = "images/Slide" + n + ".jpeg"
+            const slideimgs = [];
+            slideimgs.push(bgStr);
+            $.preload(slideimgs, {
+                order: 'ordered',
+                each: function (count) {
+                    console.log('正在加载第' + (count + 1) + '张图片');
+                },
+                all: function () {
+                    console.log('全部加载完成');
+                    window.location.href = "lots1.html?" + n;
+                }
+            });
+        }
+    </script>
+
+</head>
+<body>
+<div id="container">
+    <div id="message">
+        <div id="hyperlink" onclick="myskip()"></div>
+    </div>
+</div>
+</body>
+</html>
