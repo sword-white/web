@@ -20,7 +20,7 @@
             let list = str.split('?');//用刚刚传递地址里面的“？”把传过来的东西劈开
             console.log(list);
             var n = list[1];
-            var bgStr = "images/Slide" + n + ".jpeg";
+            var bgStr = "images/Slide (" + n + ").jpeg";
             document.getElementById("container").style.backgroundImage = "url(" + bgStr + ")";//改变背景图片
             document.getElementById("save").src = bgStr;
         }
