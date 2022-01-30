@@ -17,11 +17,10 @@
     <script>
         var n = Math.floor(Math.random() * 5 + 1);    // 可均衡获取 0 到 9 的随机整数。
         var bgStr = "images/Slide" + n + ".jpeg";
-        function preload() {
-            //预加载
-            var newImg = new Image();
-            newImg.src = bgStr;
-        }
+        //预加载
+        var newImg = new Image();
+        newImg.src = bgStr;
+
         function myskip() {
             document.getElementById("container").style.backgroundImage = "url(" + bgStr + ")";//改变背景图片
         }
@@ -31,7 +30,7 @@
 <body>
 <div id="container">
     <div id="message">
-        <div id="hyperlink" onload=preload() onclick="myskip()"></div>
+        <div id="hyperlink" onclick="myskip()"></div>
     </div>
 </div>
 </body>
