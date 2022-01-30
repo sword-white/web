@@ -10,12 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>“抽签”</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="prerender" href="lots1.html">
     <script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://code.changer.hk/jquery/plugins/jquery.cookie.js"></script>
     <script type="text/javascript"></script>
     <script>
-        var n = Math.floor(Math.random() * 5 + 1);    // 可均衡获取 0 到 9 的随机整数。
+        var n = Math.floor(Math.random() * 26 + 1);    // 可均衡获取 0 到 9 的随机整数。
         var bgStr = "images/Slide" + n + ".jpeg";
         //预加载
         var newImg = new Image();
