@@ -6,6 +6,5 @@ B
 :
 
 index.html,f\6\f6013a00b362253c64368d6eebc50ea2131754e2
-:
-
-lots1.html,3\c\3c6091aa91cfd1968eefdb9d8ecd52b9c2d84c9b
+=
+js/preload.js,d\c\dc4c29fe2f6468232b0a0802803a480c4b3c43b9
