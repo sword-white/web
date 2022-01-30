@@ -13,13 +13,13 @@
 <body>
 
 <div id="root">
-    <img style="display: none" :src="src" >
+    <img style="visibility: hidden" :src="src" >
     <div class="basic" :style="styleObj" @click="change"></div>
 </div>
 
 <script type="text/javascript">
     var n = Math.floor(Math.random() * 26 + 1);    // 可均衡获取 0 到 9 的随机整数。
-    var bgStr = 'url("./images/Slide' + n + '.jpeg")';
+    var bgStr = './images/Slide' + n + '.jpeg';
 
     const x = new Vue({
         el: '#root',
@@ -38,7 +38,7 @@
         },
         methods:{
             change() {
-                this.styleObj.backgroundImage = bgStr
+                this.styleObj.backgroundImage = 'url(' + bgStr + ')'
             }
         }
     })

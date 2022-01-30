@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8b121fb-cb0c-4f93-953c-20842746ca6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../cloneTest/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloneTest/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloneTest/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloneTest/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloneTest/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloneTest/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloneTest/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloneTest/src/main/java/com/fdse/test/clone/CloneApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloneTest/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cloneTest/src/test/java/com/fdse/test/clone/CloneApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +49,7 @@
       <workItem from="1643565559046" duration="384000" />
       <workItem from="1643569523793" duration="67000" />
       <workItem from="1643569892764" duration="4473000" />
+      <workItem from="1643578297737" duration="312000" />
     </task>
     <servers />
   </component>
